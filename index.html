@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUMAN – Moda con memoria</title>
+  <!-- Si querés, después agregás tu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVEGACIÓN PRINCIPAL -->
+  <header>
+    <div class="logo">
+      <a href="#home">HUMAN</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#sobre-human">Sobre Human</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#cargar-prenda">Cargar prenda</a></li>
+        <li><a href="#historias">Historias</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#identidad-visual">Identidad visual</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#etiqueta">Descargar etiqueta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- 1. HOME -->
+        <section id="home">
+        <div class="home-layout">
+            <div class="home-text">
+            <h1>La prenda deja de cubrir el cuerpo y comienza a vestir la historia.</h1>
+            <p>Plataforma emocional para prendas con memoria viva.</p>
+
+            <div class="home-cta">
+                <a href="#cargar-prenda" class="btn-principal">Cargar mi prenda</a>
+                <a href="#historias" class="btn-secundario">Ver historias</a>
+            </div>
+            </div>
+
+            <!-- ESPACIO PARA FOTO PRINCIPAL -->
+            <div class="home-image">
+            <!-- Cambiá la ruta cuando tengas la foto -->
+            <img src="./imagen/woman-8037728_1280.jpg" alt="Prenda con etiqueta Human" />
+            </div>
+        </div>
+        </section>
+
+
+    <!-- 2. SOBRE HUMAN -->
+    <section id="sobre-human">
+      <h2>Sobre Human</h2>
+
+      <article>
+        <h3>Problemática</h3>
+        <p>Desconexión emocional con las prendas y pérdida de significado en el acto de vestir.</p>
+      </article>
+
+      <article>
+        <h3>Origen del proyecto</h3>
+        <p>Re:Human nace como respuesta crítica y sensible a la deshumanización de la moda.</p>
+      </article>
+
+      <article>
+        <h3>Propósito</h3>
+        <p>Recuperar la memoria afectiva de las prendas y convertir el vestirse en un acto de conexión.</p>
+      </article>
+
+      <blockquote>
+        “Re:Human no vende moda, devuelve humanidad.”
+      </blockquote>
+    </section>
+
+    <!-- 3. CÓMO FUNCIONA -->
+    <section id="como-funciona">
+      <h2>Cómo funciona</h2>
+
+      <article>
+        <h3>Prenda física</h3>
+        <p>Prendas confeccionadas con materiales honestos y sostenibles.</p>
+      </article>
+
+      <article>
+        <h3>Etiqueta inteligente (QR / NFC)</h3>
+        <p>Cada prenda contiene un código único que conecta con su historia.</p>
+      </article>
+
+      <article>
+        <h3>Plataforma emocional</h3>
+        <p>Un archivo vivo donde se guardan y comparten las historias de cada prenda.</p>
+      </article>
+
+      <article>
+        <h3>Flujo de uso</h3>
+        <ol>
+          <li>Cargás tu prenda y su historia.</li>
+          <li>Generás el código QR / NFC.</li>
+          <li>La prenda circula y su historia se expande.</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- 4. CARGAR MI PRENDA -->
+    <section id="cargar-prenda">
+      <h2>Cargar mi prenda</h2>
+
+      <!-- Este form es solo estructura, después podés modificar los name/id -->
+      <form action="#" method="post">
+        <div>
+          <label for="foto-prenda">Foto de la prenda</label>
+          <input type="file" id="foto-prenda" name="foto-prenda" />
+        </div>
+
+        <div>
+          <label for="titulo-prenda">Nombre / título de la prenda</label>
+          <input type="text" id="titulo-prenda" name="titulo-prenda" placeholder="Ej: Campera de viaje a Madrid" />
+        </div>
+
+        <div>
+          <label for="tipo-prenda">Tipo de prenda</label>
+          <input type="text" id="tipo-prenda" name="tipo-prenda" placeholder="Campera, remera, vestido, etc." />
+        </div>
+
+        <div>
+          <label for="anio-prenda">Año o momento</label>
+          <input type="text" id="anio-prenda" name="anio-prenda" placeholder="Ej: Invierno 2019" />
+        </div>
+
+        <div>
+          <label for="historia-prenda">Historia de la prenda</label>
+          <textarea id="historia-prenda" name="historia-prenda" rows="5" placeholder="Contá la historia, el recuerdo, la persona o el momento que guarda esta prenda..."></textarea>
+        </div>
+
+        <button type="submit">Publicar historia</button>
+      </form>
+    </section>
+
+    <!-- 5. HISTORIAS HUMAN -->
+    <section id="historias">
+      <h2>Historias Human</h2>
+      <p>Explorá las prendas y sus memorias.</p>
+
+      <!-- Filtros (solo estructura) -->
+      <div class="filtros-historias">
+        <h3>Filtrar por:</h3>
+        <select>
+          <option>Tipo de prenda</option>
+        </select>
+
+        <select>
+          <option>Emoción</option>
+        </select>
+
+        <input type="text" placeholder="Buscar por palabra clave" />
+      </div>
+
+      <!-- Grid de tarjetas de historias (ejemplo) -->
+      <div class="grid-historias">
+        <article class="tarjeta-historia">
+          <h3>Campera de Madrid</h3>
+          <p>“La usé el día que me animé a viajar solo...”</p>
+          <a href="#">Ver historia completa</a>
+        </article>
+
+        <article class="tarjeta-historia">
+          <h3>Vestido de mi abuela</h3>
+          <p>“Era su favorito para los domingos...”</p>
+          <a href="#">Ver historia completa</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. COMUNIDAD -->
+    <section id="comunidad">
+      <h2>Comunidad</h2>
+      <p>Un archivo colectivo de memoria afectiva textil.</p>
+
+      <ul>
+        <li>Historias destacadas</li>
+        <li>Prendas con múltiples dueños</li>
+        <li>Colaboraciones con artistas y diseñadores</li>
+      </ul>
+    </section>
+
+
+    <!-- 8. FAQ -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Cómo escaneo la prenda?</summary>
+        <p>Podés escanear el código QR con la cámara de tu celular o acercar el dispositivo al chip NFC.</p>
+      </details>
+
+      <details>
+        <summary>¿Quién puede ver mi historia?</summary>
+        <p>Dependiendo de la configuración, tu historia puede ser pública o solo visible para quien tenga la prenda.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué tipo de prenda puedo cargar?</summary>
+        <p>Cualquier prenda que tenga un valor emocional para vos.</p>
+      </details>
+    </section>
+
+    <!-- 9. CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Si querés saber más sobre el proyecto, colaborar o usar Human en una intervención artística, escribinos.</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- 10. DESCARGAR ETIQUETA -->
+    <section id="etiqueta">
+      <h2>Descargar mi etiqueta</h2>
+      <p>Generá tu código QR para imprimir y colocar en tu prenda.</p>
+
+      <!-- Estructura de ejemplo, después se puede conectar a una lógica real -->
+      <form action="#" method="post">
+        <div>
+          <label for="id-prenda">ID / código de la prenda</label>
+          <input type="text" id="id-prenda" name="id-prenda" placeholder="Ej: HUM-0001" />
+        </div>
+        <button type="submit">Generar etiqueta</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Human · Proyecto académico – Campañas Publicitarias</p>
+  </footer>
+</body>
+</html>
